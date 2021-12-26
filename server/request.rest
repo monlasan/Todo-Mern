@@ -1,0 +1,22 @@
+GET http://localhost:3001/api/todos
+###
+
+POST http://localhost:3001/api/todos/new
+Content-Type: application/json
+
+{
+    "text": "Paying my bills"
+}
+
+###
+PUT http://localhost:3001/api/todos/complete/618cd4e25779bcde63615f9d
+Content-Type: application/json
+
+{
+    "done": true
+}
+
+###
+DELETE http://localhost:3001/api/todos/delete/618c3cfb841edf6a20001048
+
+###
